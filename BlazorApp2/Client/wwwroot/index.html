@@ -28,7 +28,7 @@
     </div>
     <script>
         window.blazorCulture = {
-            get: () => window.localStorage['BlazorCulture'],
+            get: () => window.localStorage['BlazorCulture'] ?? navigator.language,
             set: (value) => window.localStorage['BlazorCulture'] = value
         };
     </script>
